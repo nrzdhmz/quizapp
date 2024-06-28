@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
 
-const companySchema = new mongoose.Schema({
-  name: { type: String, required: true, unique: true },
-  companyId: { type: mongoose.Schema.Types.ObjectId, default: mongoose.Types.ObjectId } // Unique ID for the company
+const CompanySchema = new mongoose.Schema({
+    name: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+    companyCode: { type: String, required: true, unique: true },
+    employers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+    employees: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
 });
 
-module.exports = mongoose.model('Company', companySchema);
+module.exports = mongoose.model('Company', CompanySchema);

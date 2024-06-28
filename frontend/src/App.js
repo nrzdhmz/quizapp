@@ -7,7 +7,9 @@ import MakeQuizPage from './pages/adminPart/MakeQuizPage';
 import AttemptQuizPage from './pages/userPart/AttemptQuizPage';
 import AttemptQuizById from './pages/userPart/AttemptQuizById'; 
 import LoginPage from './pages/LoginPage';
-import Register from './pages/Register';
+import RegisterCompany from './pages/RegisterCompany';
+import RegisterEmployer from './pages/RegisterEmployer';
+import RegisterEmployee from './pages/RegisterEmployee';
 import { UserProvider } from './context/UserContext'; 
 
 const App = () => {
@@ -21,7 +23,9 @@ const App = () => {
           <Route path="/attemptquizes" element={<AttemptQuizPage />} />
           <Route path="/attemptquiz/:quizId" element={<AttemptQuizById />} /> 
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/register/:role" element={<Register />} />
+          <Route path="/register-company" element={<RegisterCompany />} />
+          <Route path="/register-employer" element={<RegisterEmployer />} />
+          <Route path="/register-employee" element={<RegisterEmployee />} />
         </Routes>
       </UserProvider>
     </Router>

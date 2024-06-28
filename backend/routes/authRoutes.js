@@ -1,9 +1,11 @@
 const express = require('express');
-const { register, login, enrollCompany } = require('../controllers/authController');
+const { createCompany, registerEmployer, registerEmployee, login } = require('../controllers/authController');
+
 const router = express.Router();
 
-router.post('/register', register); // Endpoint for user registration
-router.post('/login', login); // Endpoint for user login
-router.put('/enroll-company', enrollCompany); // Endpoint to enroll user in a company
+router.post('/create-company', createCompany);
+router.post('/register-employer', registerEmployer);
+router.post('/register-employee', registerEmployee);
+router.post('/login', login);
 
 module.exports = router;

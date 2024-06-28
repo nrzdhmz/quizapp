@@ -41,11 +41,28 @@ const Header = () => {
                 </Link>
               </li>
             ) : (
-              <li>
-                <Link to='/login'>
-                  Log in
-                </Link>
-              </li>
+              <>
+                <li>
+                  <Link to='/login'>
+                    Log in
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/register-company'>
+                    Register Company
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/register-employer'>
+                    Register Employer
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/register-employee'>
+                    Register Employee
+                  </Link>
+                </li>
+              </>
             )}
           </ul>
         </nav>

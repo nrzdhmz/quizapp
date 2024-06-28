@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const quizSchema = new mongoose.Schema({
   title: { type: String, required: true },
-  companyId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, // Reference to User model
+  companyName: { type: String, required: true }, // Store company name directly
   link: { type: String, required: true },
   questions: [{
     text: { type: String, required: true },
