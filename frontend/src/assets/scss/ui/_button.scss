@@ -1,0 +1,47 @@
+.createQuestionBtn{
+  background-color: rgb(72, 72, 72);
+  border: 1px solid black;
+  padding: 4px 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: rgb(214, 214, 214);
+  margin-top: 10px;
+  width: fit-content;
+  .icon{
+    font-size: 1.1rem;
+  }
+}
+
+.deleteAnswerBtn{
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 1.2rem;
+  margin: 3px 5px 0;
+}
+.QuestionBtn{
+  background-color: black;
+  color: white;
+  padding: 8px 20px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;  
+}
+.authBtn{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 20px 0 10px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;  
+}
+.right{
+  position: absolute;
+  right: 0;
+}
+.left{
+  position: absolute;
+  left: 0;
+}

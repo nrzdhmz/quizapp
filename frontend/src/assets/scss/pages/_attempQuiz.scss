@@ -1,0 +1,107 @@
+.attemptQuiz {
+  background-color: white;
+  padding: 40px 40px 40px 100px;
+  color: black;
+  min-height: 100vh;
+  max-height: fit-content;
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+
+    .quizBoxes{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      .quizBox{
+        padding: 10px;
+        width: 400px;
+        height: 150px;
+        border-radius: 5px;
+        border: 2px solid black;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .questionsAttempt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      padding: 20px 30px 0;
+      border-radius: 10px;
+      gap: 50px;
+
+      .navigationButtons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0 10px 50px;
+      }
+
+      .question {
+        width: 100%;
+
+        p {
+          font-weight: 500;
+          padding: 10px 0;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          li {
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: rgb(156, 156, 156);
+              color: white;
+            }
+          }
+
+          .selectedAnswer {
+            background-color: black;
+            color: white;
+          }
+
+          .correctAnswer {
+            background-color: #4caf50;
+            color: white;
+          }
+
+          .wrongAnswer {
+            background-color: #f44336; 
+            color: white;
+          }
+        }
+      }
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .video {
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
